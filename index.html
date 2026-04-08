@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!--https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4-->
+    <title>2026 Mine Sweeper</title>
+    <link rel="style.css" src="style.css"/>
+</head>
+<body class="bg-sky-50 flex items=center justify-center min-h-screen font-sans select-none">
+    <div class="bg-cyan-50 rounded-xl shadow-lg border-gray-100">
+        <!--頂部資訊控制-->
+        <div class="flex justify-brtween items-center mb-4">
+            <h1 class="text-xl font-bold text-gray-800">掃地雷</h1>
+            <div id="status" class="text-red-500 font-bold font-mono text-lg">10</div>
+            <button onclick="init()" class="bg-gray-100 hover:bg-gray-200 text-gray-700 px-3 py-1 rounded transition-colors text-sm font-bold">
+
+            </button>
+        </div>
+        
+        <!--遊戲網格-->
+        <div id="board" class="grid grid-cols-10 bg-gray-400 border border-gray-400 gap-[1px]">
+
+        </div>
+        <!--遊戲訊息-->
+        <div id="emg" class=",t-4 tet-center font-bold h-6 text-gray-800"></div>
+    </div>
+</body>
+</html>
